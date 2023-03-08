@@ -1,0 +1,42 @@
+body,
+html {
+    background-color: rgb(20, 20, 47);
+    color: white;
+}
+
+header {
+    /* border: solid 3px yellow; */
+    display: flex;
+    padding: 10px;
+
+}
+
+h1 {
+    margin: auto;
+}
+
+.parent {
+    outline: 5px solid hotpink;
+    padding: 1rem;
+}
+
+.main-with-sidebar {
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.children {
+    border: solid 3px lime;
+}
+
+.main {
+flex-basis: 600px;
+flex-grow: 9999;
+}
+
+.side {
+flex-basis: 400px;
+flex-grow: 1;
+}

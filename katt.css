@@ -1,0 +1,115 @@
+body,
+html {
+  background-color: rgb(20, 20, 40);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.parent {
+  /* border: solid 3px lime; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: right;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.children {
+  /* border: solid 3px magenta; */
+}
+
+img {
+  width: 400px;
+  height: auto;
+  float: right;
+  flex-basis: 1;
+  justify-content: center;
+}
+
+.side {
+  flex-grow: 1;
+  flex-basis: 400px;
+}
+
+.photo {
+  flex-basis: 400px;
+  display: flex;
+  /* flex-grow: 1; */
+  justify-content: center;
+}
+
+.main {
+  flex-basis: 600px;
+  flex-grow: 9999;
+}
+
+.photo-container {
+  width: 400px;
+}
+
+/* 1081 column break */
+
+@media (min-width: 1082px) {
+  .photo {
+    position: absolute;
+    top: 25rem;
+  }
+}
+
+@media (min-width: 1082px) {
+  .side {
+    position: relative;
+  }
+}
+
+/* 1440 */
+
+@media (min-width: 1082px) {
+  .photo {
+    top: 31.05rem;
+  }
+}
+
+@media (min-width: 1082px) {
+  img {
+    height: 200px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  .photo-container,
+  img {
+    height: 282px;
+  }
+}
+
+/* 881 break */
+
+@media (max-width: 881px) {
+  .children {
+    width: 400px;
+  }
+}
+
+@media (max-width: 881px) {
+  .photo {
+    width: 600px;
+    margin: auto;
+    position: relative;
+  }
+}
+
+/* 453 */
+
+@media (max-width: 453px) {
+  .photo,
+  img {
+    position: relative;
+    width: 200px;
+    justify-content: center;
+  }
+}
